@@ -16,16 +16,17 @@ boilWater()
 console.log('Boiling for water is done')
 */
 
-// B) Asynchronous water boiling and chopping carrots to make soup
+// B) Asynchronous:  water boiling and chopping carrots to make soup .
 
-console.log('Start Chopping carrots')
-boilWater(10000)
+/** As we are boiling the water in the background, we start chopping the carrots */
 
-function boilWater(time) {
+boilWater()
+
+function boilWater() {
   console.log('boiling ...')
-  setTimeout(time => {
+  setTimeout(() => {
     console.log('Boiling Done')
-  }, time)
+  }, 3000)
 }
 
 console.log('Keep chopping carrots...')
