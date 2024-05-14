@@ -1,17 +1,15 @@
 // Javascript is single threaded, synchronous language.
-//
-console.log(`i'm first`);
-console.log(`i'm second`);
-console.log(`i'm third`);
 
-console.log(`i'm first`);
-boilingWater();
-console.log(`i'm third`);
+// let's boilWater
 
-function boilingWater() {
-  console.log('boiling...');
-  for (let i = 0; i < 1000; i++) {
-    console.log('still not done...');
+console.log('Getting ready to boil the water')
+
+function boilWater() {
+  for (let i = 0; i < 10000; i++) {
+    console.log('boiling...')
   }
-  console.log('done.');
 }
+
+boilWater()
+
+console.log('Boiling for water is done')
